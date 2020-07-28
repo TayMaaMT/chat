@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="chat.css">
+    <title>Chat App</title>
+</head>
+
+<body>
+    <div class="index">
+        <h1 class="text">Wellcom</h1>
+        <div class="form">
+            <label>Enter Uniqe name</label><br><br>
+            <input id='name' type="text" placeholder="Name"><br><br>
+            <button id='enter'>OK</button><br>
+        </div>
+        <p id=msg></p>
+
+    </div>
+
+    <div class="chatApp">
+        <h1>Chat App</h1>
+        <div class="container">
+            <div class="title">online users</div>
+            <div class="Roomname">Private Masseging</div>
+            <div class="users">
+
+            </div>
+            <div class="chat">
+                <div class="masseges">
+
+                </div>
+                <div class="sendmsg">
+                    <form>
+                        <input id="sendMSG" type="text" placeholder="Enter your message">
+                        <button id="send">send</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="chat.js"></script>
+</body>
+
+</html>
